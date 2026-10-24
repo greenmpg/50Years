@@ -55,7 +55,7 @@ a{color:var(--gold)}
 .tagline{font-family:var(--label);letter-spacing:.08em;font-size:.95rem;color:var(--gold);margin:.3rem 0 0;max-width:30rem;text-wrap:balance;text-transform:lowercase}
 .film{font-family:var(--display);font-size:clamp(2.4rem,9vw,4.2rem);line-height:1;color:var(--gold);margin:.1rem 0 0;text-wrap:balance;text-shadow:0 0 30px #d8b25a40}
 .swords{width:11rem;max-width:60%;height:auto;color:var(--gold)}
-.storybook{width:100%;max-width:24rem;height:auto;justify-self:center;margin-top:.5rem}
+.keep{width:100%;max-width:24rem;height:auto;justify-self:center;margin-top:.5rem}
 .perils{display:grid;grid-template-columns:repeat(auto-fit,minmax(11.5rem,1fr));gap:1rem}
 .peril{margin:0;display:grid;gap:.6rem;align-content:start;padding:1rem;border:1px solid #2b211833;background:#e9dcbd}
 .peril svg{width:4.5rem;height:auto}
@@ -136,27 +136,26 @@ footer{text-align:center;color:var(--mist);font-family:var(--display-i);font-sty
       <h2>Once upon a time, in 1976</h2>
       <p class="dropcap">A boy was born who would one day grow into a man of considerable wit, impeccable charm, a hairline in noble retreat, and fifty remarkable years. Now the story reaches its most important chapter so far, and it would not be a proper tale without the people who filled the other forty-nine.</p>
       <p>So we are borrowing a castle (well, a movie theater) for one night. Come for popcorn, cheers, and a big-screen showing of the greatest fairy tale ever filmed.</p>
-      <svg class="storybook" viewBox="0 0 320 175" role="img" aria-label="An open storybook with a sword across its pages and a ribbon bookmark marked 50">
-        <ellipse cx="160" cy="150" rx="138" ry="9" fill="var(--ink)" opacity=".12"/>
-        <path d="M30 136v6c50-10 100-8 130 4 30-12 80-14 130-4v-6" fill="#e2d3b0" stroke="var(--ink)" stroke-width="1.5"/>
-        <path d="M160 40C130 28 80 26 30 36v100c50-10 100-8 130 4z" fill="#fbf4e2" stroke="var(--ink)" stroke-width="1.5"/>
-        <path d="M160 40c30-12 80-14 130-4v100c-50-10-100-8-130 4z" fill="#fbf4e2" stroke="var(--ink)" stroke-width="1.5"/>
-        <path d="M160 40v100" stroke="var(--ink)" stroke-width="1" opacity=".4"/>
-        <g stroke="var(--ink)" stroke-width="2" opacity=".28" stroke-linecap="round">
-          <path d="M64 56h76M48 68h92M48 80h92M48 92h92M48 104h84M48 116h92"/>
-          <path d="M180 56h92M180 68h92M180 80h92M180 92h70M180 104h92M180 116h80"/>
+      <svg class="keep" viewBox="50 0 580 280" role="img" aria-label="A storybook castle on a hill with a winding road and a rose pennant marked 50">
+        <circle cx="520" cy="70" r="26" fill="var(--gold)" opacity=".55"/>
+        <g fill="var(--ink)" opacity=".35"><circle cx="150" cy="50" r="2"/><circle cx="210" cy="90" r="1.5"/><circle cx="460" cy="40" r="1.5"/><circle cx="590" cy="110" r="2"/><circle cx="110" cy="120" r="1.5"/></g>
+        <path d="M60 270C140 230 220 190 340 186S540 230 620 270z" fill="#d9c79f"/>
+        <path d="M60 270C140 230 220 190 340 186S540 230 620 270" fill="none" stroke="var(--ink)" stroke-width="1.5"/>
+        <path d="M300 270c20-18 60-22 40-40s-40-20-6-40" fill="none" stroke="var(--ink)" stroke-width="10" opacity=".18" stroke-linecap="round"/>
+        <path d="M300 270c20-18 60-22 40-40s-40-20-6-40" fill="none" stroke="#fbf4e2" stroke-width="6" stroke-linecap="round"/>
+        <g fill="var(--ink)">
+          <rect x="282" y="122" width="116" height="68"/>
+          <rect x="250" y="96" width="36" height="94"/>
+          <rect x="394" y="96" width="36" height="94"/>
+          <rect x="322" y="70" width="36" height="52"/>
+          <path d="M246 96l22-34 22 34z"/><path d="M390 96l22-34 22 34z"/><path d="M318 70l22-38 22 38z"/>
+          <path d="M282 122h12v-10h10v10h12v-10h10v10h12v-10h10v10h12v-10h10v10h12v-10h10v10h12v-10h10v10z"/>
         </g>
-        <rect x="47" y="49" width="12" height="13" fill="var(--rose)"/>
-        <path d="M154 38h12v104l-6-6-6 6z" fill="var(--rose)"/>
-        <g transform="rotate(-14 160 92)">
-          <path d="M122 89h150l12 3-12 3H122z" fill="#cfd2db" stroke="var(--ink)" stroke-width="1.5"/>
-          <path d="M128 92h136" stroke="var(--ink)" stroke-width="1" opacity=".35"/>
-          <rect x="88" y="88" width="28" height="8" rx="2" fill="var(--ink)"/>
-          <rect x="114" y="76" width="7" height="32" rx="2" fill="var(--gold)" stroke="var(--ink)" stroke-width="1.5"/>
-          <circle cx="84" cy="92" r="6" fill="var(--gold)" stroke="var(--ink)" stroke-width="1.5"/>
-        </g>
-        <circle cx="160" cy="154" r="15" fill="var(--rose)" stroke="var(--gold)" stroke-width="2"/>
-        <text x="160" y="159" text-anchor="middle" font-family="IM Fell English SC, Georgia, serif" font-size="14" fill="var(--page)">50</text>
+        <path d="M326 190v-30a14 14 0 0 1 28 0v30z" fill="var(--page)"/>
+        <g fill="var(--gold)"><rect x="262" y="120" width="10" height="16" rx="5"/><rect x="408" y="120" width="10" height="16" rx="5"/><rect x="335" y="88" width="10" height="14" rx="5"/></g>
+        <path d="M340 32V12" stroke="var(--ink)" stroke-width="2"/>
+        <path d="M341 12h40l-10 9 10 9h-40z" fill="var(--rose)"/>
+        <text x="358" y="25" text-anchor="middle" font-family="IM Fell English SC, Georgia, serif" font-size="13" fill="var(--page)">50</text>
       </svg>
     </section>
 
