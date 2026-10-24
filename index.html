@@ -54,6 +54,12 @@ a{color:var(--gold)}
 .cover .sub{font-family:var(--display-i);font-style:italic;font-size:1.2rem;color:var(--mist);margin:0;max-width:30rem;text-wrap:balance}
 .tagline{font-family:var(--label);letter-spacing:.08em;font-size:.95rem;color:var(--gold);margin:.3rem 0 0;max-width:30rem;text-wrap:balance;text-transform:lowercase}
 .film{font-family:var(--display);font-size:clamp(2.4rem,9vw,4.2rem);line-height:1;color:var(--gold);margin:.1rem 0 0;text-wrap:balance;text-shadow:0 0 30px #d8b25a40}
+.jump{display:inline-flex;align-items:center;gap:.5rem;margin-top:.4rem;font-family:var(--display);font-size:1.25rem;color:var(--night);background:var(--gold);text-decoration:none;padding:.55rem 1.4rem;border-radius:2px;transition:transform .15s ease,box-shadow .15s ease}
+.jump:hover{transform:translateY(-2px);box-shadow:0 8px 20px #d8b25a40}
+.jump:focus-visible{outline:3px solid var(--page);outline-offset:3px}
+html{scroll-behavior:smooth}
+#rsvp{scroll-margin-top:1.5rem}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.jump{transition:none}}
 .swords{width:11rem;max-width:60%;height:auto;color:var(--gold)}
 .keep{width:100%;max-width:24rem;height:auto;justify-self:center;margin-top:.5rem}
 .perils{display:grid;grid-template-columns:repeat(auto-fit,minmax(11.5rem,1fr));gap:1rem}
@@ -125,6 +131,7 @@ footer{text-align:center;color:var(--mist);font-family:var(--display-i);font-sty
         <circle cx="72" cy="56" r="3.5"/><circle cx="128" cy="56" r="3.5"/>
       </g>
     </svg>
+    <a class="jump" href="#rsvp">RSVP by October 31 <span aria-hidden="true">&darr;</span></a>
     <svg class="castle" viewBox="0 0 800 120" aria-hidden="true" preserveAspectRatio="xMidYMax meet">
       <path fill="currentColor" d="M0 120V96c60-10 120-14 180-8l20-2V60h8v-8h6v8h8v26h30V40h6V24l10-14 10 14v16h6v46h40V58h8v-8h6v8h8v28h22V70h8v-8h6v8h8v18c70-4 140 0 210 8l30 2V66h8v-8h6v8h8v34c40 4 80 8 120 12v8z"/>
     </svg>
