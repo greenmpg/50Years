@@ -232,5 +232,17 @@ if (RSVP_URL) {
 }
 </script>
 
+<script>
+window.goatcounter = { path: function(p) { return '50years.green98.com' + p; } };
+document.getElementById('rsvp-btn').addEventListener('click', function() {
+  try {
+    if (window.goatcounter && window.goatcounter.count) {
+      window.goatcounter.count({ path: '50years-rsvp-click', title: 'Clicked RSVP (50 years)', event: true });
+    }
+  } catch (e) {}
+});
+</script>
+<script data-goatcounter="https://dalleypoetry.goatcounter.com/count"
+        async src="https://gc.zgo.at/count.js"></script>
 </body>
 </html>
