@@ -54,7 +54,8 @@ a{color:var(--gold)}
 .cover .sub{font-family:var(--display-i);font-style:italic;font-size:1.2rem;color:var(--mist);margin:0;max-width:30rem;text-wrap:balance}
 .tagline{font-family:var(--label);letter-spacing:.08em;font-size:.95rem;color:var(--gold);margin:.3rem 0 0;max-width:30rem;text-wrap:balance;text-transform:lowercase}
 .film{font-family:var(--display);font-size:clamp(2.4rem,9vw,4.2rem);line-height:1;color:var(--gold);margin:.1rem 0 0;text-wrap:balance;text-shadow:0 0 30px #d8b25a40}
-.jump{display:inline-flex;align-items:center;gap:.5rem;margin-top:.4rem;font-family:var(--display);font-size:1.25rem;color:var(--night);background:var(--gold);text-decoration:none;padding:.55rem 1.4rem;border-radius:2px;transition:transform .15s ease,box-shadow .15s ease}
+.jump-note{font-family:var(--label);font-size:.9rem;letter-spacing:.08em;color:var(--mist);text-transform:lowercase}
+.jump{display:inline-flex;align-items:center;gap:.5rem;margin-top:.6rem;font-family:var(--display);font-size:1.9rem;letter-spacing:.06em;color:var(--night);background:var(--gold);text-decoration:none;padding:.6rem 2.6rem;border-radius:2px;transition:transform .15s ease,box-shadow .15s ease}
 .jump:hover{transform:translateY(-2px);box-shadow:0 8px 20px #d8b25a40}
 .jump:focus-visible{outline:3px solid var(--page);outline-offset:3px}
 html{scroll-behavior:smooth}
@@ -132,7 +133,8 @@ footer{text-align:center;color:var(--mist);font-family:var(--display-i);font-sty
         <circle cx="72" cy="56" r="3.5"/><circle cx="128" cy="56" r="3.5"/>
       </g>
     </svg>
-    <a class="jump" href="#rsvp">RSVP by October 31 <span aria-hidden="true">&darr;</span></a>
+    <a class="jump" id="rsvp-top" href="https://forms.gle/bEg3d2C5Us37q3tN8" target="_blank" rel="noopener">RSVP</a>
+    <span class="jump-note">Please reply by October 31</span>
     <svg class="castle" viewBox="0 0 800 120" aria-hidden="true" preserveAspectRatio="xMidYMax meet">
       <path fill="currentColor" d="M0 120V96c60-10 120-14 180-8l20-2V60h8v-8h6v8h8v26h30V40h6V24l10-14 10 14v16h6v46h40V58h8v-8h6v8h8v28h22V70h8v-8h6v8h8v18c70-4 140 0 210 8l30 2V66h8v-8h6v8h8v34c40 4 80 8 120 12v8z"/>
     </svg>
@@ -207,7 +209,7 @@ footer{text-align:center;color:var(--mist);font-family:var(--display-i);font-sty
         <li>Your name</li>
         <li>How many in your party, kids included</li>
       </ul>
-      <a class="btn" id="rsvp-btn" href="#rsvp" target="_blank" rel="noopener">As you wish &rarr;</a>
+      <a class="btn" id="rsvp-btn" href="#rsvp" target="_blank" rel="noopener">RSVP &rarr;</a>
       <p class="fine" id="rsvp-note">Please reply by Saturday, October 31.</p>
     </section>
   </main>
@@ -238,6 +240,10 @@ document.getElementById('rsvp-btn').addEventListener('click', function() {
   try {
     if (window.goatcounter && window.goatcounter.count) {
       window.goatcounter.count({ path: '50years-rsvp-click', title: 'Clicked RSVP (50 years)', event: true });
+document.getElementById('rsvp-top').addEventListener('click', function() {
+  try {
+    if (window.goatcounter && window.goatcounter.count) {
+      window.goatcounter.count({ path: '50years-rsvp-click-top', title: 'Clicked top RSVP (50 years)', event: true });
     }
   } catch (e) {}
 });
