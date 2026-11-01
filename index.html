@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta property="og:title" content="Mike Turns 50">
-<meta property="og:description" content="A private screening of The Princess Bride. Monday, November 2. Arrive 7:00&ndash;7:15 pm, movie at 7:30 pm. Kaysville Theater.">
+<meta property="og:description" content="A special screening of The Princess Bride. Monday, November 2. Arrive 7:00&ndash;7:15 pm, movie at 7:30 pm. Kaysville Theater. All are welcome, no RSVP needed.">
 <style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 <title>Mike's Chapter Fifty</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%2712%27 fill=%27%23141a33%27/%3E%3Ctext x=%2732%27 y=%2744%27 text-anchor=%27middle%27 font-family=%27Georgia,serif%27 font-size=%2734%27 font-weight=%27bold%27 fill=%27%23d8b25a%27%3E50%3C/text%3E%3C/svg%3E">
@@ -13,7 +13,7 @@
 </head>
 <body>
 <style>
-/* Layout: a storybook opened at night. Starry cover, then the pages of the tale, ending at the RSVP. Single dark look by choice. */
+/* Layout: a storybook opened at night. Starry cover, then the pages of the tale, ending with an open invitation. Single dark look by choice. */
 :root{
   --night:#141a33;
   --night-2:#1d2547;
@@ -54,6 +54,7 @@ a{color:var(--gold)}
 .cover .sub{font-family:var(--display-i);font-style:italic;font-size:1.2rem;color:var(--mist);margin:0;max-width:30rem;text-wrap:balance}
 .tagline{font-family:var(--label);letter-spacing:.08em;font-size:.95rem;color:var(--gold);margin:.3rem 0 0;max-width:30rem;text-wrap:balance;text-transform:lowercase}
 .film{font-family:var(--display);font-size:clamp(2.4rem,9vw,4.2rem);line-height:1;color:var(--gold);margin:.1rem 0 0;text-wrap:balance;text-shadow:0 0 30px #d8b25a40}
+.welcome{margin:.6rem 0 0;font-family:var(--display);font-size:1.9rem;letter-spacing:.04em;color:var(--gold);border:1.5px solid #d8b25a99;padding:.45rem 2rem;border-radius:2px}
 .jump-note{font-family:var(--label);font-size:.9rem;letter-spacing:.08em;color:var(--mist);text-transform:lowercase}
 .jump{display:inline-flex;align-items:center;gap:.5rem;margin-top:.6rem;font-family:var(--display);font-size:1.9rem;letter-spacing:.06em;color:var(--night);background:var(--gold);text-decoration:none;padding:.6rem 2.6rem;border-radius:2px;transition:transform .15s ease,box-shadow .15s ease}
 .jump:hover{transform:translateY(-2px);box-shadow:0 8px 20px #d8b25a40}
@@ -120,7 +121,7 @@ footer{text-align:center;color:var(--mist);font-family:var(--display-i);font-sty
   <header class="cover">
     <span class="eyebrow">a birthday tale in fifty chapters</span>
     <h1>Mike Turns <span class="age">50</span></h1>
-    <p class="sub">Join us at the theater for a private screening of</p>
+    <p class="sub">Join us at the theater for a special screening of</p>
     <p class="film">The Princess Bride</p>
     <p class="tagline">Featuring fencing, fighting, true love, and one birthday boy of unusual size.</p>
     <svg class="swords" viewBox="0 0 200 60" aria-hidden="true">
@@ -133,8 +134,8 @@ footer{text-align:center;color:var(--mist);font-family:var(--display-i);font-sty
         <circle cx="72" cy="56" r="3.5"/><circle cx="128" cy="56" r="3.5"/>
       </g>
     </svg>
-    <a class="jump" id="rsvp-top" href="https://forms.gle/bEg3d2C5Us37q3tN8" target="_blank" rel="noopener">RSVP</a>
-    <span class="jump-note">Please reply by October 31</span>
+    <p class="welcome">All are welcome</p>
+    <span class="jump-note">No RSVP needed &middot; bring family &amp; friends</span>
     <svg class="castle" viewBox="0 0 800 120" aria-hidden="true" preserveAspectRatio="xMidYMax meet">
       <path fill="currentColor" d="M0 120V96c60-10 120-14 180-8l20-2V60h8v-8h6v8h8v26h30V40h6V24l10-14 10 14v16h6v46h40V58h8v-8h6v8h8v28h22V70h8v-8h6v8h8v18c70-4 140 0 210 8l30 2V66h8v-8h6v8h8v34c40 4 80 8 120 12v8z"/>
     </svg>
@@ -201,16 +202,11 @@ footer{text-align:center;color:var(--mist);font-family:var(--display-i);font-sty
       </ul>
     </section>
 
-    <section class="rsvp" id="rsvp" aria-labelledby="rsvp-h">
+    <section class="rsvp" id="welcome" aria-labelledby="welcome-h">
       <span class="chapter-label">the final chapter</span>
-      <h2 id="rsvp-h">Will you join the tale?</h2>
-      <p class="fine">Seats are limited, so reserve your spots now! The form asks for:</p>
-      <ul>
-        <li>Your name</li>
-        <li>How many in your party, kids included</li>
-      </ul>
-      <a class="btn" id="rsvp-btn" href="#rsvp" target="_blank" rel="noopener">RSVP &rarr;</a>
-      <p class="fine" id="rsvp-note">Please reply by Saturday, October 31.</p>
+      <h2 id="welcome-h">All are welcome</h2>
+      <p>No RSVP needed. Bring your family, bring your friends, and come join the tale.</p>
+      <p class="fine">Monday, November 2 at the Kaysville Theater, 21 N Main Street. Arrive between 7:00 and 7:15. The movie starts at 7:30.</p>
     </section>
   </main>
 
@@ -218,35 +214,7 @@ footer{text-align:center;color:var(--mist);font-family:var(--display-i);font-sty
 </div>
 
 <script>
-// Paste the Google Form link here to switch the RSVP button on.
-const RSVP_URL = "https://forms.gle/bEg3d2C5Us37q3tN8";
-
-const btn = document.getElementById("rsvp-btn");
-const note = document.getElementById("rsvp-note");
-if (RSVP_URL) {
-  btn.href = RSVP_URL;
-} else {
-  btn.setAttribute("aria-disabled", "true");
-  btn.removeAttribute("target");
-  btn.addEventListener("click", e => e.preventDefault());
-  btn.innerHTML = "RSVP opens soon";
-  note.textContent = "The RSVP form opens soon. Please reply by Saturday, October 31.";
-}
-</script>
-
-<script>
 window.goatcounter = { path: function(p) { return '50years.green98.com' + p; } };
-document.getElementById('rsvp-btn').addEventListener('click', function() {
-  try {
-    if (window.goatcounter && window.goatcounter.count) {
-      window.goatcounter.count({ path: '50years-rsvp-click', title: 'Clicked RSVP (50 years)', event: true });
-document.getElementById('rsvp-top').addEventListener('click', function() {
-  try {
-    if (window.goatcounter && window.goatcounter.count) {
-      window.goatcounter.count({ path: '50years-rsvp-click-top', title: 'Clicked top RSVP (50 years)', event: true });
-    }
-  } catch (e) {}
-});
 </script>
 <script data-goatcounter="https://dalleypoetry.goatcounter.com/count"
         async src="https://gc.zgo.at/count.js"></script>
